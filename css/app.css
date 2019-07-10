@@ -1,0 +1,99 @@
+@font-face {
+font-family: 'Franklin Gothic Demi';
+font-style: normal;
+font-weight: normal;
+src: local('Franklin Gothic Demi'), url('bold.woff') format('woff');
+}
+body{
+
+font-family: 'Franklin Gothic Demi';
+
+}
+h1 {
+
+color: #707070;
+font-size: 50px;
+
+}
+h2 {
+font-size: 30px;
+
+}
+
+
+p {
+font-family: 'Franklin Gothic';
+	font-size: 20px;
+}
+
+.showing h1 {}
+
+#encabezado-lg{display: block;}
+#encabezado-sm{display: none;}
+
+
+
+
+#titulo {
+
+	width: 844px;
+}
+
+
+
+.btn {
+	border-radius: 30px 30px 30px 30px
+}
+
+.input {
+	border-radius: 15px 15px 15px 15px
+}
+
+.form-group{
+
+margin-top: 22px;
+
+}
+
+
+#logo-footer{
+	width: 262px;
+	float: right;
+}
+
+/*Media Queries*/
+@media only screen and (max-width: 600px) {
+
+#encabezado{
+
+
+}
+#logo-footer{
+margin-right: 40px;
+  width: 262px;
+}
+
+#encabezado-lg{display: none;}
+#encabezado-sm{display:block;}
+
+
+#titulo {
+
+	width:336px;
+}
+h1 {
+
+
+font-size: 26px;
+
+}
+
+p {
+font-family: 'Franklin Gothic';
+	font-size: 15px;
+}
+
+
+
+
+}
