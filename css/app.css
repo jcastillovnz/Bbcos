@@ -89,6 +89,14 @@ margin-right: 45px;
 
 	width:336px;
 }
+
+#boton {
+
+ display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
 h1 {
 
 
