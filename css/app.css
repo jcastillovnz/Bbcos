@@ -22,7 +22,8 @@ font-size: 30px;
 
 
 p {
-font-family: 'Franklin Gothic';
+font-family: 'Franklin Gothic Medium';
+Weight:;
 	font-size: 20px;
 }
 
@@ -69,7 +70,7 @@ margin-top: 22px;
 
 }
 #logo-footer{
-margin-right: 40px;
+margin-right: 45px;
   width: 262px;
 }
 
