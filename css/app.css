@@ -32,9 +32,9 @@ font-family: 'Franklin Gothic Medium';
 #encabezado-lg{display: block;}
 #encabezado-sm{display: none;}
 
-#logo-header{
+.logo-header{
+
 display: none;
-align-content: center;
 }
 
 
@@ -72,9 +72,9 @@ margin-top: 22px;
 
 
 }
-#logo-header{
+.logo-header{
+
 display: block;
-align-content: center;
 }
 #logo-footer{
 margin-right: 45px;
