@@ -9,6 +9,12 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/app.css"  crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+<script type="text/javascript" src="js/script.js" defer></script>
+<script src="https://smtpjs.com/v3/smtp.js">
+</script>
 
 
 <title>Bbcos Distribuye </title>
@@ -35,11 +41,14 @@
   <body>
 
 
-<div class="container ">
+
+
+
+
+<div class="container"  id="app">
 <!-- TITULO -->
 <div id="titulo"  class="mx-auto text-center my-5">
 <h1>SE PARTE DE NUESTRA RED DE DISTRIBUIDORES EN ARGENTINA
-</h1>
 </div>
 <!-- TITULO -->
 
@@ -104,31 +113,31 @@ Completa el formulario
 <div class="container">
   
 
- <form action="/action_page.php">
+ <form @submit.prevent="enviar()" >
     <div class="form-group">
       <label >Nombre y apellido</label>
-      <input  type="text" class="form-control input form-control-lg"   name="nombre">
+      <input  required="" type="text" class="form-control input form-control-lg"   v-model="nombre">
     </div>
-    <div class="form-group">
+    <div  class="form-group">
       <label >Correo electronico</label>
-      <input type="email" class="form-control input form-control-lg"   name="email">
+      <input required="" type="email" class="form-control input form-control-lg"  v-model="email">
     </div>
 
     <div class="form-group">
       <label >Numero celular</label>
-      <input type="phone" class="form-control input form-control-lg"   name="numero_celular">
+      <input required="" type="phone" class="form-control input form-control-lg"   v-model="numero_celular">
     </div>
 
 
     <div class="form-group">
       <label >Ciudad</label>
-      <input type="text" class="form-control input form-control-lg"   name="Ciudad">
+      <input required="" type="text" class="form-control input form-control-lg"   v-model="ciudad">
     </div>
 
 
     <div class="form-group">
       <label >Provincia</label>
-      <input type="text" class="form-control input form-control-lg"   name="provincia">
+      <input required="" type="text" class="form-control input form-control-lg"   v-model="provincia">
     </div>
 
 
@@ -143,22 +152,7 @@ Completa el formulario
 
 
   </form>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    </div>
     </div>
 
   </div>
@@ -206,20 +200,13 @@ Completa el formulario
 </div>
 
 </footer>
-
-
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<script type="text/javascript" src="js/script.js" defer></script>
 
-
-
-
-  </body>
+</body>
 </html>
 
 
