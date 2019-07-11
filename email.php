@@ -38,14 +38,10 @@ Numero celular: $data->numero_celular
 Ciudad: $data->ciudad
 <br>
 Provincia: $data->provincia
-
-
-
 ";
+$exito = $mail->send();
 
-    $exito = $mail->send();
-
-return json_encode($exito);
+return json_encode(['data'=>$exito]);
 
 } catch (Exception $exception) {
 return json_encode($exito);

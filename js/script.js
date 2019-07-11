@@ -22,12 +22,12 @@ axios.post('/email.php', {
     numero_celular: this.numero_celular,
     ciudad: this.ciudad,
     provincia: this.provincia
-    
+
 
   })
   .then(function (response) {
  
-console.log(response);
+console.log(response.data);
 
 
 
