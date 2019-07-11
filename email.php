@@ -41,8 +41,8 @@ Provincia: $data->provincia
 ";
 $exito = $mail->send();
 
-return json_encode(['data'=>$exito]);
+return 10000;
 
 } catch (Exception $exception) {
-return json_encode($exito);
+return 10000;
 }
